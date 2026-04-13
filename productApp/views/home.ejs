@@ -1,0 +1,43 @@
+<% layout("layout/boilerplate.ejs") -%>
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-body p-4 p-md-5 text-center">
+                    <p class="text-uppercase text-secondary small mb-2">Product Store</p>
+                    <h1 class="h2 fw-bold mb-3">Welcome to the Home Page</h1>
+                    <p class="text-secondary mb-4">
+                        View the product list or add a new product from this simple store app.
+                    </p>
+
+                    <div class="d-flex justify-content-center flex-wrap gap-3">
+                        <a href="/products" class="btn btn-primary">Show All Products</a>
+                        <a href="/products/new" class="btn btn-outline-primary">Add New Product</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-4 text-center">
+                <div class="col-md-4">
+                    <div class="border rounded p-3 bg-light h-100">
+                        <h2 class="h5 mb-1">Simple</h2>
+                        <p class="text-secondary mb-0">Clean and easy to use.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="border rounded p-3 bg-light h-100">
+                        <h2 class="h5 mb-1">Fast</h2>
+                        <p class="text-secondary mb-0">Quick access to products.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="border rounded p-3 bg-light h-100">
+                        <h2 class="h5 mb-1">Template-based</h2>
+                        <p class="text-secondary mb-0">Uses the existing layout file.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

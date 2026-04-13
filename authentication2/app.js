@@ -14,7 +14,7 @@ app.use(session({
 }))
 
 mongoose.connect("mongodb://localhost:27017/authHonrs")
-.then(()=>{console.log("database is connectd")})
+.then(()=>{console.log("DB is connected")})
 .catch(()=>{console.log("DB is not connected")})
 
 app.get("/",(req,res)=>{
@@ -45,13 +45,11 @@ app.get('/login',(req,res)=>{
 
 app.post('/login',async(req,res)=>{
         const {username , password} = req.body;
-        console.log("Received username:", JSON.stringify(username));
 
         const user = await User.findOne({username});
         if (!user) {
             return res.redirect('/login');
         }
-        console.log(user)
         const pass = await bcrypt.compare(password, user.password);
 
         if (pass) {
