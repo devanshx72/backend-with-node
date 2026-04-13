@@ -1,0 +1,12 @@
+{
+  "name": "http-server",
+  "version": "1.0.0",
+  "description": "HTTP server using only built-in Node.js modules with request logging",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
